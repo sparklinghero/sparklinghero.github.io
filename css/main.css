@@ -34,8 +34,9 @@ a {
 .logo {
 	font-family: 'Acme', sans-serif;
 	color: black;
-	font-size: 4.2em;
-	margin-left: 10px;
+	font-size: 5em;
+	margin-left: 30px;
+	margin-top: 15px;
 }
 
 img {

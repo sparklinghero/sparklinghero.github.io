@@ -2,6 +2,18 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+
+
+
+
+
 
 
 html,body {
@@ -12,12 +24,18 @@ html,body {
 
 body {
 	width: 100%;
-	background: url(../images/background.png) no-repeat;
+	background: url(../images/back.svg) no-repeat;
 	background-size: cover;
 }
 
 a {
 	text-decoration: none;
+}
+.logo {
+	font-family: 'Acme', sans-serif;
+	color: black;
+	font-size: 4.2em;
+	margin-left: 10px;
 }
 
 img {
@@ -28,8 +46,8 @@ img {
 
 nav {
 	padding: 50px;
-	transform: translateY(-105px) translateX(40px);
-	margin-right: 40px;
+	transform: translateY(-45px) translateX(40px);
+	margin-right: 50px;
 }
 
 nav ul {
@@ -44,7 +62,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: white;
+	color: black;
 	padding: 11px 20px;
 	border-radius: 10px;
 	font-size: 25px;
@@ -70,7 +88,6 @@ nav ul li a:hover {
 .container h1 {
 	color: white;
 	font-size: 6.5em;
-	margin-top: -5px;
 }
 
 .container a {
@@ -91,12 +108,12 @@ nav ul li a:hover {
 
 .ab:hover {
 	background: white;
-	color: yellow;
+	color: #ef473a;
 }
 
 .aws {
 	background: white;
-	color: yellow;
+	color: #ef473a;
 	border: 2px solid white;
 	-webkit-transition-duration: 0.3s;
 }
@@ -133,7 +150,7 @@ nav ul li a:hover {
 }
 
 .abt p a {
-	color: yellow;
+	color: #ef473a;
 	-webkit-transition-duration:0.3s;
 }
 
@@ -142,7 +159,7 @@ nav ul li a:hover {
 }
 
 .ct {
-	background: linear-gradient(to right,#ffe738,#fcf1a1);
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
 	width: 100%;
 	min-height: 500px;
 	text-align: center;
@@ -219,7 +236,7 @@ nav ul li a:hover {
 }
 
 .pts p a {
-	color: yellow;
+	color: #ef473a;
 	-webkit-transition-duration:0.3s;
 }
 
@@ -230,7 +247,7 @@ nav ul li a:hover {
 footer {
 	width: 100%;
 	min-height: 350px;
-	background: linear-gradient(to right,#ffe738,#fcf1a1);
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
 }
 
 footer h3 {

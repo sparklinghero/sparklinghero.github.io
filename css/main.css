@@ -24,8 +24,13 @@ html,body {
 
 body {
 	width: 100%;
-	background: url(../images/back.svg) no-repeat;
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
 	background-size: cover;
+}
+
+header {
+	background: transparent;
+	height: 100px;
 }
 
 a {
@@ -33,7 +38,7 @@ a {
 }
 .logo {
 	font-family: 'Acme', sans-serif;
-	color: black;
+	color: white;
 	font-size: 5em;
 	margin-left: 30px;
 	margin-top: 15px;
@@ -63,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: black;
+	color: white;
 	padding: 11px 20px;
 	border-radius: 10px;
 	font-size: 25px;

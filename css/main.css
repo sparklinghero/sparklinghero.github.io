@@ -88,6 +88,7 @@ nav ul li a:hover {
 .container {
 	text-align: center;
 	width: 100%;
+	min-height: 460px;
 	-webkit-transition: width 2s;
 }
 

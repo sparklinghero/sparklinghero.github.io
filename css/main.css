@@ -1,0 +1,265 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+html,body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	width: 100%;
+	background: url(../images/background.png) no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	padding: 10px 15px;
+}
+
+nav {
+	padding: 50px;
+	transform: translateY(-105px) translateX(40px);
+	margin-right: 40px;
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+	margin-top: -70px;
+}
+
+nav ul li {
+	display: inline;
+	float: left;
+}
+
+nav ul li a {
+	color: white;
+	padding: 11px 20px;
+	border-radius: 10px;
+	font-size: 25px;
+	-webkit-transition-duration:0.4s;
+}
+
+nav ul li a:hover {
+	color: black;
+	background: white;
+}
+
+.active {
+	color: black;
+	background: white;
+}
+
+.container {
+	text-align: center;
+	width: 100%;
+	-webkit-transition: width 2s;
+}
+
+.container h1 {
+	color: white;
+	font-size: 6.5em;
+	margin-top: -5px;
+}
+
+.container a {
+	padding: 15px 20px;
+	border-radius: 50px;
+	margin: 10px;
+	font-size: 1.2em;
+	margin-top: 15px;
+	margin-bottom: -20px;
+}
+
+.ab {
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+	-webkit-transition-duration: 0.3s;
+}
+
+.ab:hover {
+	background: white;
+	color: yellow;
+}
+
+.aws {
+	background: white;
+	color: yellow;
+	border: 2px solid white;
+	-webkit-transition-duration: 0.3s;
+}
+
+.aws:hover {
+	background: transparent;
+	color: white;
+}
+
+.abt {
+	width: 100%;
+	min-height: 300px;
+	background: white;
+	text-align: center;
+	margin-top: 130px;
+	-webkit-transition: width 2s;
+}
+
+.abt h1 {
+	font-size: 4em;
+	padding: 40px 0;	
+}
+
+.abt hr {
+	width: 15%;
+	color: black;
+	border: 1px solid black;
+	
+}
+
+.abt p {
+	font-size:2.6em;
+	padding: 20px 0;
+}
+
+.abt p a {
+	color: yellow;
+	-webkit-transition-duration:0.3s;
+}
+
+.abt p a:hover {
+	color: black;
+}
+
+.ct {
+	background: linear-gradient(to right,#ffe738,#fcf1a1);
+	width: 100%;
+	min-height: 500px;
+	text-align: center;
+	-webkit-transition: width 2s;
+}
+
+.ct h1 {
+	font-size: 4em;
+	padding: 40px 0;
+	color: white;
+}
+
+.ct hr {
+	width: 15%;
+	color: white;
+	border: 1px solid white;
+}
+
+.ct p {
+	font-size:2.6em;
+	padding: 20px 0;
+	color: white;
+}
+
+.ct ul {
+	list-style-type: none;
+}
+
+.ct ul li {
+	padding: 20px 0;
+}
+
+.ct ul li a {
+	color: white;
+	font-size: 2.4em;
+	-webkit-transition-duration:0.3s;
+}
+
+.ct ul li a:hover {
+	color: black;
+}
+
+.ct p a {
+	color: black;
+	-webkit-transition-duration: 0.3s;
+}
+
+.ct p a:hover {
+	color: white;
+}
+
+.pts {
+	width: 100%;
+	min-height: 400px;
+	background: white;
+	text-align: center;
+	-webkit-transition: width 2s;
+}
+
+.pts h1 {
+	font-size: 4em;
+	padding: 40px 0;
+	color: black;
+}
+
+.pts hr {
+	width: 15%;
+	border: 1px solid black;
+}
+
+.pts p {
+	font-size:2.6em;
+	padding: 20px 0;
+}
+
+.pts p a {
+	color: yellow;
+	-webkit-transition-duration:0.3s;
+}
+
+.pts p a:hover {
+	color: black;
+}
+
+footer {
+	width: 100%;
+	min-height: 350px;
+	background: linear-gradient(to right,#ffe738,#fcf1a1);
+}
+
+footer h3 {
+	padding: 20px 10px;
+	color: white;
+	font-size: 2em;
+}
+
+footer ul li {
+	list-style-type: none;
+	padding: 10px 0;
+}
+
+footer ul li a{
+	color: white;
+}
+
+footer a {
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+}
+
+footer hr {
+	width: 10%;
+	border: 1px solid white;
+}
+
+footer h2 {
+	text-align: center;
+	color: white;
+}

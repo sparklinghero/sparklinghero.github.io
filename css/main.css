@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 .container h1 {
 	color: white;
-	font-size: 6em;
+	font-size: 6.5em;
 }
 
 .container a {
@@ -209,7 +209,7 @@ nav ul li a:hover {
 }
 
 .ct p a {
-	color: black;
+	color: grey;
 	-webkit-transition-duration: 0.3s;
 }
 

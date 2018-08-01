@@ -66,8 +66,8 @@ nav ul li a:hover {
 }
 
 .active:hover {
-	
-	background: transparent;
+	border-radius: none;
+	border-bottom: none;
 }
 
 .container {

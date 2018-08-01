@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+
+html,body {
+	height: 100%;
+	background: white;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+header {
+	background: transparent;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	font-family: 'Acme', sans-serif;
+	color: black;
+	font-size: 5em;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+nav {
+	padding: 50px;
+	transform: translateY(-45px) translateX(40px);
+	margin-right: 50px;
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+	margin-top: -85px;
+}
+
+nav ul li {
+	display: inline;
+	float: left;
+	margin: 15px;
+}
+
+nav ul li a {
+	color: black;
+	padding: 11px 20px;
+	border-radius: none;
+	font-size: 25px;
+	-webkit-transition-duration:0.4s;
+}
+
+nav ul li a:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+.active {
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
+	color: white;
+	border-radius: 15px;
+}
+
+.active:hover {
+	
+	background: transparent;
+}
+
+.container {
+	width: 100%;
+	min-height: 1200px;
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
+	text-align: center;
+}
+
+.container h1 {
+	color: white;
+	font-size: 5em;
+	padding: 30px 0;
+}
+
+.container hr {
+	width: 15%;
+	border: 1px solid white;
+}
+
+.container p {
+	font-size: 2em;
+	color: white;
+	padding: 30px 0;
+}
+
+.container p a {
+	color: grey;
+	-webkit-transition-duration:0.3s;
+}
+
+.container p a:hover {
+	color: black;
+}
+
+footer {
+	text-align: center;
+}
+
+footer h3 {
+	margin-top: -20px;
+}

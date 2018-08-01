@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+html,body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	width: 100%;
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
+	background-size: cover;
+}
+
+header {
+	background: transparent;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	font-family: 'Acme', sans-serif;
+	color: white;
+	font-size: 5em;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+nav {
+	padding: 50px;
+	transform: translateY(-45px) translateX(40px);
+	margin-right: 50px;
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+	margin-top: -70px;
+}
+
+nav ul li {
+	display: inline;
+	float: left;
+}
+
+nav ul li a {
+	color: white;
+	padding: 11px 20px;
+	border-radius: 10px;
+	font-size: 25px;
+	-webkit-transition-duration:0.4s;
+}
+
+nav ul li a:hover {
+	color: black;
+	background: white;
+}
+
+.container {
+	width: 90%;
+	background: white;
+	margin-left: 70px;
+	border-radius: 15px;
+	-webkit-box-shadow: -1px 0px 38px 0px rgba(0,0,0,0.75);
+	text-align: center;
+	min-height: 1200px;
+}
+
+.container h1 {
+	font-size: 5em;
+	padding: 20px 0;
+}
+
+.container hr {
+	width: 15%;
+	border: 1px solid black;
+}
+
+.container h3 {
+	font-size: 2em;
+}
+
+.elements {
+	width: 100%;
+	text-align: left;
+	height: 200px;
+	margin-left: 30px;
+}
+
+.pgno {
+	border: 2px solid black;
+	color: black;
+	padding: 5px 10px;
+}
+
+.lnr {
+	border: 1px solid black;
+	color: grey;
+	padding: 5px 10px;
+}
+
+.container h3 a {
+	color: #cb2d3e;
+	-webkit-transition-duration: 0.3s;
+}
+
+.container h3 a:hover {
+	color: black;
+}
+
+footer {
+	width: 100%;
+	min-height: 350px;
+	background: linear-gradient(to right,#cb2d3e,#ef473a);
+}
+
+footer h3 {
+	padding: 20px 10px;
+	color: white;
+	font-size: 2em;
+}
+
+footer ul li {
+	list-style-type: none;
+	padding: 10px 0;
+}
+
+footer ul li a{
+	color: white;
+}
+
+footer a {
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+}
+
+footer hr {
+	width: 10%;
+	border: 1px solid white;
+}
+
+footer h2 {
+	text-align: center;
+	color: white;
+}
+
+.sc {
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+}

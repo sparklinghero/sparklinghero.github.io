@@ -74,7 +74,7 @@ section#container {
         @include desktop {
             text-align: left;
             line-height: 0.9em;
-            font-size: 5.5em;
+            font-size: 5em;
             width: 30%;
             margin-left: 30px;
         }
@@ -94,6 +94,7 @@ section#container {
             box-shadow: none;
             transition-duration: 0.3s;
             margin-top: 15%;
+            box-shadow: (0 10px 30px rgba(0, 0, 0,0.2));
             
             @include desktop {
                 box-shadow: (0 10px 30px rgba(0,0,0,0.2));
@@ -101,7 +102,7 @@ section#container {
                 padding: 15px;
                 font-size: 2.5em;
                 margin-left: 20px;
-                margin-top: 8%;
+                margin-top: -2%;
             }
         }
 
@@ -112,7 +113,7 @@ section#container {
 
             @include desktop {
                 margin-left: 26%;
-                margin-top: -5.5%;
+                margin-top: -7.2%;
                 
             }
         }
@@ -131,10 +132,10 @@ section#container {
 
             @include desktop {
             margin-left: 69%;
-            margin-top: -28.3%;
+            margin-top: -34.5%;
             margin-bottom: 8%;
-            width: 555px;
-            height:635px;
+            width: 418px;
+            height:535px;
             background-image: url("https://s15.postimg.cc/587n026h7/desk.png");
             }
         }

@@ -33,10 +33,17 @@ body #bg {
 
 section#container {
   background: transparent;
+  margin-bottom: none;
+}
+
+@media (min-width: 840px) {
+  section#container {
+    margin-bottom: 4%;
+  }
 }
 
 section#container h1 {
-  font-size: 4.5em;
+  font-size: 2.8em;
   text-align: center;
   color: #fff;
   display: block;
@@ -47,7 +54,7 @@ section#container h1 {
 @media (min-width: 840px) {
   section#container h1 {
     text-align: left;
-    line-height: 1.3em;
+    line-height: 0.9em;
     font-size: 5.5em;
     width: 30%;
     margin-left: 30px;
@@ -62,13 +69,14 @@ section#container a {
   margin: 30px auto 0 auto;
   text-align: center;
   color: #669eff;
-  font-size: 0.2em;
-  width: 70%;
+  font-size: 0.9em;
+  width: 60%;
   padding: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  margin-top: 15%;
 }
 
 @media (min-width: 840px) {
@@ -76,9 +84,24 @@ section#container a {
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 20%;
-    padding: 20px;
+    padding: 15px;
     font-size: 2.5em;
     margin-left: 20px;
+    margin-top: 8%;
+  }
+}
+
+section#container .second {
+  margin-left: none;
+  margin-top: -2%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 840px) {
+  section#container .second {
+    margin-left: 26%;
+    margin-top: -5.5%;
   }
 }
 
@@ -97,11 +120,11 @@ section#container div#illus {
 
 @media (min-width: 840px) {
   section#container div#illus {
-    margin-left: 71%;
-    margin-top: -39%;
+    margin-left: 69%;
+    margin-top: -28.3%;
     margin-bottom: 8%;
-    width: 550px;
-    height: 680px;
+    width: 555px;
+    height: 635px;
     background-image: url("https://s15.postimg.cc/587n026h7/desk.png");
   }
 }
@@ -109,7 +132,7 @@ section#container div#illus {
 header {
   display: block;
   padding: 0;
-  height: 20%;
+  height: 28%;
   text-align: center;
   margin-left: 0;
   background-color: #fff;
@@ -141,13 +164,15 @@ header a {
 
 header nav {
   margin-right: 50px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 header nav ul {
   list-style-type: none;
+  white-space: nowrap;
   float: none;
   margin-top: 0;
+  margin-left: -12%;
 }
 
 @media (min-width: 840px) {
@@ -158,7 +183,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block;
+  display: inline;
   padding-left: 0;
 }
 
@@ -175,6 +200,7 @@ header nav ul li a {
           transition-duration: 0.3s;
   margin-left: 10px;
   color: #000;
+  display: inline;
 }
 
 @media (min-width: 840px) {
@@ -207,7 +233,7 @@ main section#about {
   width: 80%;
   background: #fff;
   text-align: center;
-  margin: 1em auto 1em auto;
+  margin: 1em auto;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -222,7 +248,7 @@ main section#about {
 }
 
 main section#about h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: #000;
   padding: 15px;
 }
@@ -283,7 +309,7 @@ main section#contact {
 }
 
 main section#contact h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #000;
   padding: 15px;
 }
@@ -354,7 +380,7 @@ main section#posts {
 }
 
 main section#posts h1 {
-  font-size: 3em;
+  font-size: 2em;
   color: #000;
   padding: 15px;
 }
@@ -372,7 +398,7 @@ main section#posts hr {
 }
 
 main section#posts p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 @media (min-width: 840px) {
@@ -401,7 +427,7 @@ footer {
 
 @media (min-width: 840px) {
   footer {
-    min-height: 48%;
+    min-height: 52%;
   }
 }
 

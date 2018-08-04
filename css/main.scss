@@ -73,8 +73,8 @@ section#container {
         
         @include desktop {
             text-align: left;
-            line-height: 0.9em;
-            font-size: 5em;
+            line-height: .9em;
+            font-size: 4.2em;
             width: 30%;
             margin-left: 30px;
         }
@@ -95,50 +95,27 @@ section#container {
             transition-duration: 0.3s;
             margin-top: 15%;
             box-shadow: (0 10px 30px rgba(0, 0, 0,0.2));
+            margin-bottom: 5%;
             
             @include desktop {
                 box-shadow: (0 10px 30px rgba(0,0,0,0.2));
-                width: 20%;
-                padding: 15px;
-                font-size: 2.5em;
-                margin-left: 20px;
-                margin-top: -2%;
+                display: inline-block;
+                padding: $padding;
+                margin-top: -4%;
+                width: 15%;
+                margin-left: 3%;
+                text-transform: uppercase;
             }
         }
 
-        .second {
-            margin-left: none;
-            margin-top: -2%;
-            box-shadow: (0 10px 30px rgba(0, 0, 0,0.2));
-
-            @include desktop {
-                margin-left: 26%;
-                margin-top: -7.2%;
-                
-            }
-        }
+      
+    
 
         a:hover {
             color: color(back-dark);
         }
 
-        div#illus {
-            margin-left: none;
-            margin-top: none;
-            margin-bottom: none;
-            width: 0;
-            height: 0;
-            background-image: none;
-
-            @include desktop {
-            margin-left: 69%;
-            margin-top: -34.5%;
-            margin-bottom: 8%;
-            width: 418px;
-            height:535px;
-            background-image: url("https://s15.postimg.cc/587n026h7/desk.png");
-            }
-        }
+     
 
         
 }
@@ -162,7 +139,7 @@ header {
             font-family: 'Acme', sans-serif;
             text-decoration: none;
             color: #000000;
-            font-size: 4em;
+            font-size: 3em;
 
             @include desktop {
                 font-size: 6em;
@@ -181,7 +158,7 @@ header {
                 white-space: nowrap;
                 float: none;
                 margin-top: 0;
-                margin-left: -12%;
+                
 
                 @include desktop {
                     float: right;

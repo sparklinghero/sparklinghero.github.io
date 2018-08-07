@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  header {
+    text-align: left;
+  }
+}
+
+header a {
+  font-family: 'Acme', sans-serif;
+  font-size: 3em;
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  header a {
+    font-size: 3.5em;
+    padding: 15px;
+  }
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: -5%;
+}
+
+@media (min-width: 600px) {
+  header nav ul li {
+    margin-left: 0%;
+  }
+}
+
+header nav ul li a {
+  font-size: 1.5em;
+  padding: 15px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  header nav ul li a {
+    color: #669eff;
+    font-size: 1.8em;
+    padding: none;
+  }
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+main {
+  background-color: #005dff;
+  width: 100%;
+  margin-bottom: 10%;
+  padding: 5px;
+}
+
+main a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #669eff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background: #669eff;
+  margin-left: 30%;
+  padding: 10px;
+  margin-bottom: 40%;
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (min-width: 600px) {
+  main a {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-left: 2%;
+  }
+}
+
+main a:hover {
+  background-color: transparent;
+  color: #669eff;
+}
+
+main section#container {
+  width: 90%;
+  margin: 1em 1em;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 5%;
+  text-align: none;
+}
+
+@media (min-width: 600px) {
+  main section#container {
+    margin: 1em auto;
+    text-align: left;
+  }
+}
+
+main section#container h1 {
+  font-size: 3.2em;
+  text-align: center;
+  padding: none;
+}
+
+@media (min-width: 600px) {
+  main section#container h1 {
+    text-align: left;
+    padding: 15px;
+  }
+}
+
+main section#container hr {
+  width: 15%;
+  border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  main section#container hr {
+    border: transparent;
+  }
+}
+
+main section#container h3 {
+  color: grey;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  main section#container h3 {
+    text-align: left;
+    padding: 15px;
+  }
+}
+
+main section#container h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  main section#container h2 {
+    text-align: left;
+    padding: 15px;
+  }
+}
+
+main section#container p {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  main section#container p {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+main section#container ol {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  main section#container ol {
+    text-align: left;
+  }
+}
+
+main section#container ol li {
+  color: #669eff;
+  font-size: 1.5em;
+}
+
+main section#container ol li img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #669eff;
+  margin-left: -13%;
+}
+
+@media (min-width: 600px) {
+  main section#container ol li img {
+    margin-left: 0%;
+    width: 1100px;
+    height: 700px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+main #download a {
+  font-size: 1.2em;
+}
+
+footer h3 {
+  color: #669eff;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

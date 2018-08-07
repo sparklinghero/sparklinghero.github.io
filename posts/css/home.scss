@@ -126,10 +126,11 @@ section#posts {
         margin-left: 2%;
     }
     
-    h1 {
+    a {
         font-size: 2em;
         padding: $padding;
         margin-left: none;
+       
 
         @include desktop {
             margin-left: 2%;
@@ -138,9 +139,10 @@ section#posts {
 
     #post {
         
-        h1 {
+        a {
             font-size: 1.5em;
-
+            text-decoration: none;
+            color: #000;
         }
 
         h3 {

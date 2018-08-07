@@ -115,20 +115,22 @@ section#posts {
   }
 }
 
-section#posts h1 {
+section#posts a {
   font-size: 2em;
   padding: 15px;
   margin-left: none;
 }
 
 @media (min-width: 840px) {
-  section#posts h1 {
+  section#posts a {
     margin-left: 2%;
   }
 }
 
-section#posts #post h1 {
+section#posts #post a {
   font-size: 1.5em;
+  text-decoration: none;
+  color: #000;
 }
 
 section#posts #post h3 {

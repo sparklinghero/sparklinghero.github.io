@@ -57,9 +57,14 @@ body {
 
 section#container {
     background: transparent;
+    margin-bottom: none;
+
+    @include desktop {
+        margin-bottom: 4%;
+    }
 
     h1 {
-        font-size: 4.5em;
+        font-size: 2.8em;
         text-align: center;
         color: #fff;
         display: block;
@@ -68,8 +73,8 @@ section#container {
         
         @include desktop {
             text-align: left;
-            line-height: 1.3em;
-            font-size: 5.5em;
+            line-height: .9em;
+            font-size: 4.2em;
             width: 30%;
             margin-left: 30px;
         }
@@ -83,42 +88,34 @@ section#container {
             margin:30px auto 0 auto;
             text-align: center;
             color: color(back-light);
-            font-size: 0.2em;
-            width: 70%;
+            font-size: 0.9em;
+            width: 60%;
             padding: $padding;
             box-shadow: none;
             transition-duration: 0.3s;
+            margin-top: 15%;
+            box-shadow: (0 10px 30px rgba(0, 0, 0,0.2));
+            margin-bottom: 5%;
             
             @include desktop {
                 box-shadow: (0 10px 30px rgba(0,0,0,0.2));
-                width: 20%;
-                padding: 20px;
-                font-size: 2.5em;
-                margin-left: 20px;
+                display: inline-block;
+                padding: $padding;
+                margin-top: -4%;
+                width: 15%;
+                margin-left: 3%;
+                text-transform: uppercase;
             }
         }
+
+      
+    
 
         a:hover {
             color: color(back-dark);
         }
 
-        div#illus {
-            margin-left: none;
-            margin-top: none;
-            margin-bottom: none;
-            width: 0;
-            height: 0;
-            background-image: none;
-
-            @include desktop {
-            margin-left: 71%;
-            margin-top: -39%;
-            margin-bottom: 8%;
-            width: 550px;
-            height:680px;
-            background-image: url("https://s15.postimg.cc/587n026h7/desk.png");
-            }
-        }
+     
 
         
 }
@@ -126,7 +123,7 @@ section#container {
 header {
     display: block;
     padding: 0;
-    height: 20%;
+    height: 28%;
     text-align: center;
     margin-left: 0;
     background-color: #fff;
@@ -142,7 +139,7 @@ header {
             font-family: 'Acme', sans-serif;
             text-decoration: none;
             color: #000000;
-            font-size: 4em;
+            font-size: 3em;
 
             @include desktop {
                 font-size: 6em;
@@ -152,12 +149,16 @@ header {
 
         nav {
             margin-right: 50px;
-            margin-top: 30px;
+            margin-top: 20px;
+
+            
 
             ul {
                 list-style-type: none;
+                white-space: nowrap;
                 float: none;
                 margin-top: 0;
+                
 
                 @include desktop {
                     float: right;
@@ -166,18 +167,19 @@ header {
 
                 li {
                    
-                    display: inline-block;
+                    display: inline;
                     padding-left: 0;
 
                     @include desktop {
                         padding-left: 30px; 
                     }
                     a {
-                        padding: $padding;
+                        padding: 15px;
                         font-size: 1.5em;
                         transition-duration: 0.3s;
                         margin-left: 10px;
                         color: #000;
+                        display: inline;
 
                         @include desktop {
                             padding: 0;
@@ -207,7 +209,7 @@ main {
         width: 80%;
         background: #fff;
         text-align: center;
-        margin: 1em auto 1em auto;
+        margin: 1em auto;
         box-shadow: (0 10px 20px rgba(0, 0, 0,0.2));
         border-radius: $margin;
         min-height: 400px;
@@ -218,7 +220,7 @@ main {
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             color: #000;
             padding: $padding;
 
@@ -270,7 +272,7 @@ main {
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             color: #000;
             padding: $padding;
 
@@ -329,7 +331,7 @@ main {
         }
     
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             color: #000;
             padding: 15px;
 
@@ -346,7 +348,7 @@ main {
         }
     
         p {
-            font-size: 1.5em;
+            font-size: 1em;
 
             @include desktop {
                 font-size: 2em;
@@ -375,7 +377,7 @@ footer {
     min-height: 35%;
 
     @include desktop {
-        min-height: 48%;
+        min-height: 52%;
     }
     ul {
         list-style-type: none;

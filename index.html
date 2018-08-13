@@ -4,76 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="google-site-verification" content="rYf4C0SRIhOCOl1Cvaek-dUqzckuKvdnu-lKKRuclJw" />
     <title>Sparkling Hero</title>
-    <link href = "css/main.css" rel="stylesheet" type="text/css">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6800960044654178",
-    enable_page_level_ads: true
-  });
-</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href = "css/main.css" rel = "stylesheet" type="text/css"/>
 </head>
 <body>
-    <div id = "bg"></div>
-    <header id = "top">
-        <a href ="https://sparklinghero.xyz">Sh</a><br>
+    <section class = "header" id = "myHeader">
+        <a class = "logo" href = "https://sparklinghero.xyz">SPARKLING HERO</a>
+
         <nav>
             <ul>
-                <li><a href ="https://sparklinghero.xyz/#about" class = "abouta">About</a></li>
-                <li><a href ="https://sparklinghero.xyz/#contact" class ="contata">Contact</a></li>
-                <li><a href ="posts/home.html" class = "postsa">Posts</a></li>
+                <li><a href = "https://sparklinghero.xyz">Home</a></li>
+                <li><a href = "https://sparklinghero.xyz/#about">About Me</a></li>
+                <li><a href = "https://sparklinghero.xyz/#contact">Contact</a></li>
+                <li><a href = "https://sparklinghero.xyz/posts/home.html">Posts</a></li>
             </ul>
         </nav>
-    </header>
-    <section id = "container">
-        <h1>"Welcome to the Sparkling Technical World"</h1>
-        
-            <a href = "https://sparklinghero.xyz/posts/home.html" class = "second">My posts ></a>
-        </section>
-    <main>
-        <section id = "about">
-            <h1>A bit About Me</h1>
-            <hr>
-            <p>I am a student living in India. I do have a youtube channel which is named as the same name as this site. I am a college student who is studying right now but I am thoroughly interested in helping people by whatever means I can.<br>To know more about me and my mission, please <a href = "files/about.html">Click Here</a></p>
-        </section>
+    </section>
 
-        <section id = "contact">
-            <h1>Contact Me</h1>
-        
-            <p>There are many ways of Contact Me</p>
-            <ul>
-                <li><a href = "">Email</a></li>
-                <li><a href = "">Facebook</a></li>
-                <li><a href = "">Instagram</a></li>
-                <li><a href = "">YouTube</a></li>
-            </ul>
-           
-        </section>
+    <section class = "container">
+        <h1>Welcome to the Sparkling<br> Technical World</h1>
+     
+    </section>
 
-        <section id = "posts">
-                <h1>Some Posts</h1>
-                <hr>
-            <p>I am sorry. If you want to see the posts, you can go to the posts homepage from <a href  = "posts/home.html">here</a>. I thoroughly apologize for any inconvenience caused.<br>I wanted to put some of my posts here but as this website is only a static website and not dynamic, it will take some time for me to update some posts here.<br>Thank you all for your kind patience.</p>
+    <section class = "aboutme" id = "about">
+        <h1>
+            A bit About Me
+        </h1>
+        <p>I am a student living in India. I do have a youtube channel which is named as the same name as this site. I am a college student who is studying right now but I am thoroughly interested in helping people by whatever means I can.</p>
+    </section>
+
+    <section class = "posts">
+        <h1>Some Recent Posts</h1>
+        <div class = "secondcontainer">
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                <h4><a href ="#">Install Photoshop in mac for free (2018)</a><br><span style="font-style:normal;">Updated on 06/7/18</span></h4>
+                </div>
+                <div class="item">
+                  <h4><a href = "#">Install illustrator in mac for free (2018</a><br><span style="font-style:normal;">Updated on 01/8/2018</span></h4>
+                </div>
+                <div class="item">
+                  <h4><a href = "#">Install Premier Pro in mac for absolutely free (2018)</a>><br><span style="font-style:normal;">Updated on 13/8/2018</span></h4>
+                </div>
+              </div>
             
-        </section>
-       
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+    </section>
+
+    <section id = "contact" class = "contactme">
+        <h1>Contact Me</h1>
+        <div class = "elements">
+            <h2>If you have any questions or querries, please mail me at <br>admin@sparklinghero.xyz</h2><br><br>
+            <h3>-OR-</h3><br>
+            <a href = "#">Leave me a Message</a><br>
+            <a href = "#">Contact me on Facebook</a><br>
+            <a href = "#">Contact me on Instagram</a><br>
+            <h3>-OR-</h3><br>
+            <a href = "https://youtube.com/TECHNICALHEROS">YouTube</a>
+
+        </div>
+    </section>
+
+    <section id = "footer" class = "footermain">
+        <h2>SPARKLING HERO</h2><br><br>
+        <h3>Stay cool and Awesome and Connect with me on</h3><br>
+        <img src = "../images/fbook.png"/> &nbsp; <img src = "../images/1instagram.png"/> &nbsp; <img src = "../images/youtube.png"/>
+    </section>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
         
-    </main>
-   
-   
-    <footer>
-            <h2>Some useful links</h2>
-            <ul>
-            <li><a href = "#about">About</a></li>
-            <li><a href = "#contact">Contact me</a></li>
-            <li><a href = "posts/home.html">Posts</a></li>
-            </ul>
-            
-            <center><a href = "#top">Back to Top</a></center>
-            <hr>
-            <h3>Copyright &copy; 2018 SparklingHero. All rights reserved.</h2>
-    </footer>
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
 </body>
 </html>

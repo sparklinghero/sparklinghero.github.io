@@ -1,78 +1,245 @@
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$desktop: 750px;
 
-
-$colors: (
-    primary: #00476d,
-    secondary: #006ba5,
-    tertiary: #3baae5,
-);
-
-$font: 'Do Hyeon', sans-serif;
-$font2: 'Montserrat', sans-serif;
-$padding: 15px;
-
-@function color($color-name) {
-    @return map-get($colors , $color-name)
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+      @content;
+  }
 }
-
-html,body {
+  
+html  {
+    width: 85%;
     height: 100%;
-    width: 100%;
     margin: 0;
 }
 
-.header {
-    width: 100%;
-    font-family: $font;
-    background-color: color(primary);
-    min-height: 10%;
-    padding: $padding;
-
-    .logo {
-        font-size: 1.8em;
-        padding: 40px;
-        margin-top: -30%;
-        text-decoration: none;
-        color: color(tertiary);
-        box-sizing: border-box;
-        position: relative;
-        top: 10px;
-    }
-
-    nav {
-        float: right;
-        position: relative;
-        top: 15px;
-
-        ul {
-            list-style-type: none;
-
-            li {
-                display: inline-block;
-
-                a {
-                    color: color(tertiary);
-                    text-decoration: none;
-                    font-family: $font2;
-                    transition-duration: 0.3s;
-                    padding: 20px;
-                }
-
-                a:hover {
-                    border-bottom: 1px solid color(tertiary);
-                }
-            }
-        }
-    }
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #00476d;
+  color: #3baae5;
+  font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+.header {
+    background-color: #00476d;
+    z-index: 1;
+    min-height: 10%;
+}
+
+a
+{
+  text-decoration: none;
+  color: #3baae5;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #000;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  left: -30px;
+  top: -20px;
+  
+  background: #3baae5;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #3baae5;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.logo {
+    position: relative;
+    left: 70px;
+    top: 1px;
+    font-size: 1.4em;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    background: transparent;
+    position: relative;
+    top: 60px;
+
+}
+
+.container h1 {
+    font-size: 4.5em;
+    padding:20px;
+    line-height: 1.2em;  
+    position: relative;
+    left: 30px;
+    padding-top: none;
+    padding-bottom: none;
+    -webkit-animation: h1 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: h1 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+          @include desktop {
+            font-size: 7.5em;
+            padding: 25px;
+            left: 80px;
+            padding-top: 40px;
+            padding-bottom: 90px;
+          }
+}
+@-webkit-keyframes h1 {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
 .sticky {
+
     position: fixed;
     top: 0;
     width: 100%;
     -webkit-animation: sticky 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: sticky 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: sticky 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
   }
   @-webkit-keyframes sticky {
     0% {
@@ -98,128 +265,64 @@ html,body {
       opacity: 1;
     }
   }
-  
- 
-  .container {
-      width: 100%;
-      min-height: 70%;
-      text-align: center;
-      box-sizing: border-box;
-      background-color: color(primary);
-      margin: 0;
-      position: relative;
-   
-
-      h1 {
-        font-size: 6em;
-        text-align: center;
-        color: color(tertiary);
-        font-family: $font2;
-        position: relative;
-        top: 120px;
-        -webkit-animation: h1 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: h1 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-      }
-
-      @-webkit-keyframes h1 {
-        0% {
-          -webkit-filter: blur(12px);
-                  filter: blur(12px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
-          opacity: 1;
-        }
-      }
-      @keyframes text-focus-in {
-        0% {
-          -webkit-filter: blur(12px);
-                  filter: blur(12px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
-          opacity: 1;
-        }
-      }
-      
-  }
 
   .aboutme {
-      width: 100%;
+      background: #006ba5;
+      width: 117%;
+      min-height: 50%;
       text-align: center;
-      background-color: color(secondary);
+      padding: 20px;
       position: relative;
-      top: -20px;
+      top: 140px;
 
-      h1 {
-          color: #fff;
-          font-size: 2.4em;
-          padding: $padding;
-          padding-top: 130px;
-          font-family: $font2;
+      @include desktop {
+        width: 119%;
+        min-height: 150%;
       }
+  }
 
-      p {
-          width: 40%;
+  .aboutme h1 {
+      font-size: 2em;
+      color: white;
+
+      @include desktop {
+        color: #fff;
+          font-size: 2.4em;
+          padding: 15px;
+          padding-top: 130px;
+      }
+  }
+
+  .aboutme p {
+      color: #fff;
+      font-size: 1.6em;
+      padding: 20px;
+      width: none;
+
+      @include desktop {
+          width: 50%;
           color: #fff;
-          font-size: 1.8em;
+          font-size: 2.2em;
           text-align: center;
           position: relative;
-          left: 440px;
-          font-family: $font2;
-          padding-bottom: 90px;
+          left: 340px;
+          padding-bottom: 100px;
           -webkit-animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      }
-      @-webkit-keyframes p {
-        0% {
-          -webkit-transform: scale(0);
-                  transform: scale(0);
-          -webkit-transform-origin: 50% 0%;
-                  transform-origin: 50% 0%;
-          opacity: 1;
-        }
-        100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: 50% 0%;
-                  transform-origin: 50% 0%;
-          opacity: 1;
-        }
-      }
-      @keyframes scale-in-top {
-        0% {
-          -webkit-transform: scale(0);
-                  transform: scale(0);
-          -webkit-transform-origin: 50% 0%;
-                  transform-origin: 50% 0%;
-          opacity: 1;
-        }
-        100% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-          -webkit-transform-origin: 50% 0%;
-                  transform-origin: 50% 0%;
-          opacity: 1;
-        }
       }
   }
 
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: color(tertiary);
-}
+    color: #3baae5;
+  }
 
 .carousel-indicators li {
-    border-color: color(tertiary);
+    border-color: #3baae5;
 }
 
 .carousel-indicators li.active {
-    background-color: color(tertiary);
+    background-color: #3baae5;
 }
 
 .item h4 {
@@ -234,77 +337,108 @@ html,body {
     font-style: normal;
 }
 
+
+.secondcontainer {
+  width: 120%;
+  height: 20%;
+  margin-bottom: 5%;
+  text-align: center;
+  position: relative;
+  left: -5px;
+  top: 100px;
+  margin-bottom: 130px;
+
+  @include desktop {
+    height: 20%;
+    margin-bottom: 25%;
+    top: 180px;
+    left: 15%;
+  }
+  
+}
+
 .posts {
-    width: 100%;
-    padding: $padding;
-    text-align: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
 
-    .secondcontainer {
-        width: 100%;
-        height: 20%;
-        margin-bottom: 5%;
-    }
+.posts h1 {
+  position: relative;
+  top: 120px;
+  left: 35px;
 
-    h1 {
-        position: relative;
-        top: 20px;
-    }
+  @include desktop {
+    left: 100px;
+    top: 180px;
+    font-size: 2.5em;
+  }
 }
 
 .contactme {
-    width: 100%;
-    background-color: color(tertiary);
-    min-height: 40%;
-    text-align: center;
+  text-align: center;
+  color: #fff;
+  background-color: #3baae5;
+  width: 117.5%;
+  position: relative;
+  bottom: -20px;
 
-    h1 {
-        color: #fff;
-        padding-top: 50px;
-        font-size: 2em;
-        font-family: $font2;
-    }
+  @include desktop {
+    width: 119%;
+  }
 
-    h3 {
-        color: grey;
-    }
-    .elements {
-        text-align: center;
-        position: relative;
-        top: -30px;
+}
 
-        a {
-            color: white;
-            text-decoration: none;
-            padding: $padding;
-            padding-bottom: 20px;
-            font-size: 1.8em;
-            transition-duration: 0.3s;
-        }
-        a:hover {
-            color: color(secondary);
-        }
+.contactme h1 {
+  padding-top: 50px;
 
-        h2 {
-            position: relative;
-            top: 30px;
-            color: #fff;
-        }
-    }
+}
+
+.contactme a {
+  color: #fff;
+  -webkit-transition-duration: 0.3s;
+  padding-top: 15px;
+  font-size: 1.8em;
+}
+
+.contactme a:hover {
+  color: #006ba5;
 }
 
 .footermain {
-    width: 100%;
-    height: 30%;
-    background: #fff;
-    text-align: center;
-    font-family: $font2;
+  width: 117.6%;
+  height: 30%;
+  background: #fff;
+  text-align: center;
 
-    img {
-        width: 30px;
-        height: 30px;
-    }
+  @include desktop {
+    width: 119%;
+  }
+}
 
-    h2 {
-        padding-top: 30px;
-    }
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.footermain h2 {
+  padding-top: 30px;
+  color: #000;
+  position: relative;
+  top: 20px;
+}
+
+.footermain h3 {
+  color: #000;
+}
+
+.footermain hr {
+  width: 15%;
+  border: 1px solid #000;
+}
+
+.lastline {
+  margin-bottom: 20%;
+  
 }

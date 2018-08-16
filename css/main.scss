@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
 $desktop: 750px;
-$font: 'Montserrat Alternates', sans-serif;  
+$font: 'Montserrat', sans-serif;
 
 
 @mixin desktop {
@@ -305,6 +306,7 @@ a:hover
       font-size: 1.6em;
       padding: 20px;
       width: none;
+      font-family: $font;
 
       @include desktop {
           width: 50%;
@@ -407,6 +409,7 @@ a:hover
   -webkit-transition-duration: 0.3s;
   padding-top: 15px;
   font-size: 1.8em;
+
 }
 
 .contactme a:hover {
@@ -434,10 +437,12 @@ img {
   color: #000;
   position: relative;
   top: 20px;
+  font-family: sans-serif;
 }
 
 .footermain h3 {
   color: #000;
+  font-family: sans-serif;
 }
 
 .footermain hr {

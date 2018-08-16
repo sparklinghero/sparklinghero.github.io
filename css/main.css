@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
 html {
   width: 85%;
   height: 100%;
@@ -7,10 +8,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
   /* make it look decent enough */
   background: #00476d;
   color: #3baae5;
-  font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
 .header {
@@ -159,6 +160,7 @@ a:hover {
   left: 70px;
   top: 1px;
   font-size: 1.4em;
+  font-family: sans-serif;
 }
 
 .container {
@@ -174,7 +176,7 @@ a:hover {
   padding: 20px;
   line-height: 1.2em;
   position: relative;
-  left: 30px;
+  left: 20px;
   padding-top: none;
   padding-bottom: none;
   -webkit-animation: h1 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;

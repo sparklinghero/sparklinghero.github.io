@@ -36,6 +36,7 @@ body
     background-color: #00476d;
     z-index: 1;
     min-height: 11%;
+    width: 100%;  
 }
 
 a
@@ -316,7 +317,7 @@ a:hover
           font-size: 2.2em;
           text-align: center;
           position: relative;
-          left: 65px;
+          left: 100px;
           padding-bottom: 100px;
           -webkit-animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -364,6 +365,7 @@ a:hover
     top: 180px;
  
   }
+
   
 }
 
@@ -398,11 +400,16 @@ a:hover
     width: 100%;
   }
 
+
+  h2 {
+    font-size: 1.6em;
+  }
+
 }
 
 .contactme h1 {
   padding-top: 50px;
-  font-size: 1.6em;  
+  font-size: 1.9em;  
 }
 
 .contactme a {

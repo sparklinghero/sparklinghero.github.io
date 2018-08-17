@@ -462,3 +462,91 @@ img {
   margin-bottom: 20%;
   
 }
+
+input[type=text] {
+  width: 70%;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 15px; 
+  border:none;
+  background-color: #fff;
+  color: #ffffff;
+  text-align: center;
+  transition-duration: 0.3s;
+
+  @include desktop {
+  width: 30%;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 15px; 
+  border:none;
+  background-color: #fff;
+  color: #ffffff;
+  text-align: center;
+  }
+}
+
+textarea {
+  border: none;
+  border-radius: 30px;
+  width: 70%;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 15px;
+  transition-duration: 0.3s;
+
+  @include desktop {
+  border: none;
+  border-radius: 30px;
+  width: 30%;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 15px;
+  }
+}
+
+textarea:focus {
+  background-color: #3baae5;
+  border: 2px solid #fff;
+
+}
+
+input[type=text]:focus {
+  background-color: #3baae5;
+  border: 2px solid #fff;
+}
+
+input[type=submit] {
+  width: 70%;
+  background-color: #3baae5;
+  border: 2px solid #fff;
+  transition-duration: 0.3s;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 30px;
+
+  @include desktop {
+  width: 30%;
+  background-color: #3baae5;
+  border: 2px solid #fff;
+  transition-duration: 0.3s;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 30px;
+  }
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: black;
+
+  @include desktop {
+  background-color: #fff;
+  color: black;
+  }
+}
+

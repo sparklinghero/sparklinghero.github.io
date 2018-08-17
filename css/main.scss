@@ -13,9 +13,10 @@ $font: 'Montserrat', sans-serif;
 }
   
 html  {
-    width: 85%;
+    width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
     
 }
 
@@ -24,6 +25,7 @@ body
   margin: 0;
   padding: 0;
   font-family: $font;
+  width: 100%;
   
   /* make it look decent enough */
   background: #00476d;
@@ -33,7 +35,7 @@ body
 .header {
     background-color: #00476d;
     z-index: 1;
-    min-height: 10%;
+    min-height: 11%;
 }
 
 a
@@ -201,7 +203,7 @@ a:hover
     padding:20px;
     line-height: 1.2em;  
     position: relative;
-    left: 20px;
+    left: 0px;
     padding-top: none;
     padding-bottom: none;
     -webkit-animation: h1 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -209,8 +211,7 @@ a:hover
 
           @include desktop {
             font-size: 7.5em;
-            padding: 25px;
-            left: 80px;
+            left: 0px;
             padding-top: 40px;
             padding-bottom: 90px;
           }
@@ -276,21 +277,22 @@ a:hover
 
   .aboutme {
       background: #006ba5;
-      width: 117%;
+      width: 100%;
       min-height: 50%;
       text-align: center;
-      padding: 20px;
       position: relative;
       top: 140px;
 
       @include desktop {
-        width: 119%;
+        width: 100%;
         min-height: 150%;
       }
   }
 
   .aboutme h1 {
       font-size: 2em;
+      padding: 15px;
+      padding-top: 50px;
       color: white;
 
       @include desktop {
@@ -309,12 +311,12 @@ a:hover
       font-family: $font;
 
       @include desktop {
-          width: 50%;
+          width: 80%;
           color: #fff;
           font-size: 2.2em;
           text-align: center;
           position: relative;
-          left: 340px;
+          left: 65px;
           padding-bottom: 100px;
           -webkit-animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: p 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -348,12 +350,11 @@ a:hover
 
 
 .secondcontainer {
-  width: 120%;
+  width: 110%;
   height: 20%;
   margin-bottom: 5%;
   text-align: center;
   position: relative;
-  left: -5px;
   top: 100px;
   margin-bottom: 130px;
 
@@ -367,10 +368,10 @@ a:hover
 }
 
 .posts {
-  width: 100%;
+  width: 90%;  
   text-align: center;
   position: relative;
-  top: 30px;
+  top: 30px;    
 }
 
 .posts h1 {
@@ -379,7 +380,7 @@ a:hover
   left: 35px;
 
   @include desktop {
-    left: 100px;
+    left: 60px;
     top: 180px;
     font-size: 2.5em;
   }
@@ -389,12 +390,12 @@ a:hover
   text-align: center;
   color: #fff;
   background-color: #3baae5;
-  width: 117.5%;
+  width: 100%;
   position: relative;
   bottom: -20px;
 
   @include desktop {
-    width: 119%;
+    width: 100%;
   }
 
 }
@@ -417,13 +418,13 @@ a:hover
 }
 
 .footermain {
-  width: 117.6%;
+  width: 100%;
   height: 30%;
   background: #fff;
   text-align: center;
 
   @include desktop {
-    width: 119%;
+    width: 100%;
   }
 }
 

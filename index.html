@@ -1,124 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sparkling Hero</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <link href = "css/main.css" rel = "stylesheet" type="text/css"/>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Sparkling Hero</title>
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.min.css' />
 </head>
 <body>
-    <header id = "myHeader" class = "header">
-        <nav role="navigation">
-            <div id="menuToggle">
-           
-              <input type="checkbox" />
-   
-              <span></span>
-              <span></span>
-              <span></span>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				
+				<a href="index.html" class="navbar__logo">Sparkling Hero</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Posts</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">Welcome to the <b>Sparkling Technical</b> World</h1>
+						<p class="hero__text">Dedicated towards helping <b>People</b> in any ways possible.</p>
+						<a href="#" class="button button__accent">YouTube</a>
+						<a href="#" class="button hero__button">Blog</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h2>Aspiring the Technical World</h2>
+			<p>I am a type of person who loves tech to the fullest and like to answer questions related to tech. I like helping people who need my help in whatever way I definitely can. I do the same thing in my YouTube channel. If you donot know about my Youtube Channel, please <a href = "youtube.com/TECHNICALHEROS">Click Here</a></p>
+		</div>
+		<div class="container">
+			<h2>My tutorials are for</h2>
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_android_.svg" class="step__image">
+					</div>
+					<h4>Phones and Tablets</h4>
+					<p class="step__text">All the new age stuff present in the modern world of phones. All the questions are answered in a clean way.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_responsive.svg" class="step__image">
+					</div>
+					<h4>Desktop (PC or Mac)</h4>
+					<p class="step__text">All the installation procedures and coding and best practices present with programming languages.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/undraw_website_setup_.svg" class="step__image">
+					</div>
+					<h4>Web Design</h4>
+					<p class="step__text">Tutorials of designing a webpage or website or a web application from scratch using best practice procedures and frameworks.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/about.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">A Bit About Me</h2>
+					<p class="expanded__text">I am a student living in India. I do have a youtube channel which is named as the same name as this site. I am a college student who is studying right now but I am thoroughly interested in helping people by whatever means I can. Put forth any of the questions that you have about tech or web and I will answer as soon as possible.
 
-              <ul id="menu">
-                <a href="https://sparklinghero.xyz"><li>Home</li></a>
-                <a href="https://sparklinghero.xyz/#about"><li>About</li></a>
-                <a href="https://sparklinghero.xyz/#contact"><li>Contact</li></a>
-                <a href="https://sparklinghero.xyz/posts/home.html"><li>Posts</li></a>
-                
-              </ul>
-            </div>
-          </nav>
-          <a class = "logo" href = "https://sparklinghero.xyz">SPARKLING HERO</a>
-            </header>
-
-            <section class = "container">
-              <h1>Welcome to the Sparkling Technical World!!!</h1>
-            </section>
-
-            <section class = "aboutme" id = "about">
-              <h1>A bit About Me</h1>
-              <p>I am a student living in India. I do have a youtube channel which is named as the same name as this site. I am a college student who is studying right now but I am thoroughly interested in helping people by whatever means I can.</p>
-            </section>
-
-            <section class = "posts">
-              <h1>Some Recent Posts</h1>
-              <div class = "secondcontainer">
-              <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-      
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-      
-                  <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                      <h4><a href ="#">Install Photoshop in mac for free (2018)</a><br><span style="font-style:normal;">Updated on 06/7/18</span></h4>
-                      </div>
-                      <div class="item">
-                        <h4><a href = "#">Install illustrator in mac for free (2018</a><br><span style="font-style:normal;">Updated on 01/8/2018</span></h4>
-                      </div>
-                      <div class="item">
-                        <h4><a href = "#">Install Premier Pro in mac for absolutely free (2018)</a><br><span style="font-style:normal;">Updated on 13/8/2018</span></h4>
-                      </div>
-                    </div>
-                  
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <h3>To see all my posts, <a href = "https://sparklinghero.xyz/posts/home.html">Click Here</a></h3>
-          </section>
-
-          <section id = "contact" class = "contactme">
-            <h1>Contact Me</h1>
-            <div class = "elements">
-                <h1>Leave me a Meaage</h1>
-                <form action = "https://formspree.io/admin@sparklinghero.xyz" method = "POST">
-                <input type = "text" name = "Name" placeholder="Enter your name (Optional)"/><br>
-                <input type = "text" name = "email" placeholder="Enter your email" Required/><br>
-                <textarea name = "message" rows="2" colums = "3" placeholder="Enter your Message" required></textarea><br>
-                  <input type = "submit" value="Send"/>
-                </form>
-                <h3>-OR-</h3><br>
-                <a href = "#">Contact me on Facebook</a><br>
-                <a href = "#">Contact me on Instagram</a><br>
-                <h3>-OR-</h3><br>
-                <a href = "https://youtube.com/TECHNICALHEROS" class = "lastline">YouTube</a>
-    
-            </div>
-        </section>
-
-        <section id = "footer" class = "footermain">
-          <h2>SPARKLING HERO</h2><br><br>
-          <h3>Stay cool and Awesome and Connect with me on</h3><br>
-          <img src = "../images/fbook.png"/> &nbsp; <img src = "../images/1instagram.png"/> &nbsp; <img src = "../images/youtube.png"/>
-          <hr>
-        </section>
-    
-
-
-            <script>
-              window.onscroll = function() {myFunction()};
-              
-              var header = document.getElementById("myHeader");
-              var sticky = header.offsetTop;
-              
-              function myFunction() {
-                if (window.pageYOffset > sticky) {
-                  header.classList.add("sticky");
-                } else {
-                  header.classList.remove("sticky");
-                }
-              }
-              </script>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/posts.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Some recent posts</h2>
+					<p class="expanded__text">This will be updated soon. In the mean time , feel free to check out my blog by clicking on the below button.</p>
+					<a href ="#" class="button button_accent">Posts</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/message.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Leave me a message</h2>
+					<p class="expanded__text">Feel free to drop by a message any time when you have questions or suggestions. All your questions and suggestions are appreciated. <b>Only one request to you all</b>. PLease leave me a <b>valid email address</b> as I can contact you with the same email address that you provide.</p>
+					<form action = "https://formspree.io/admin@sparklinghero.xyz" method="POST">
+					<input type="text" name = "name" placeholder="Your name (optional"/>
+					<input type="text" name = "email" placeholder="Your email" Required/>
+					<textarea name = "message" placeholder="your message" required></textarea>
+					<input type="submit" value="send" class="button button__accent"/>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="cta cta--reverse">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get weekly updates</h2>
+				<p class="cta__sub cta__sub--center">Join our newsletter to get weekly updates from me <b>(No Spam guarenteed</b></p>
+				<form action="https://formspree.io/admin@sparklinghero.xyz">
+				<input type="text" name="mail" placeholder="get weekly updates" required/>
+				<input type="submit" value="receive" class="button button__accent"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index.html" class="footer__textLogo">Sparkling Hero</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						
+						<div class="footer__row">
+							<a href="#" class="footer__link">About</a>
+						</div>
+						<div class="footer__row">
+							<a href="#" class="footer__link">Contact</a>
+						</div>
+						<div class="footer__row">
+							<a href="#" class="footer__link">Blog</a>
+						</div>
+							
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">Created for <a href="https://sparklinghero.xyz" target="_blank" class="footer__link">Sparkling Hero</a>
+						</div>
+						<div class="footer__row">Special thanks to <a href="https://undraw.co" target="_blank" class="footer__link">UnDraw</a> for the inspiration and illustrations.
+						</div>
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						<a href="#" target="_blank" class="footer__link">Facebook</a>
+					</div>
+					<div class="footer__row">
+						<a href="#" target="_blank" class="footer__link">Twitter</a>
+					</div>
+					<div class="footer__row">
+						<a href="https://www.youtube.com/TECHNICALHEROS" target="_blank" class="footer__link">YouTube</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
 </body>
 </html>

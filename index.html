@@ -6,6 +6,8 @@
 	<title>Sparkling Hero</title>
 	<!-- Don't forget to add your metadata here -->
 	<link rel='stylesheet' href='css/style.min.css' />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+
 </head>
 <body>
 	<!-- Hero(extended) navbar -->
@@ -19,7 +21,7 @@
 					<ul>
 						<li><a href="#">Contact</a></li>
 						<li><a href="#">About</a></li>
-						<li><a href="#">Posts</a></li>
+						<li><a href="#">Blog</a></li>
 					</ul>
 				</nav>
 				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
@@ -136,7 +138,7 @@
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Get weekly updates</h2>
-				<p class="cta__sub cta__sub--center">Join our newsletter to get weekly updates from me <b>(No Spam guarenteed</b></p>
+				<p class="cta__sub cta__sub--center">Join our newsletter to get weekly updates from me <b>(No Spam guarenteed)</b></p>
 				<form action="https://formspree.io/admin@sparklinghero.xyz" method="POST">
 				<input type="text" name="mail" placeholder="get weekly updates" required/>
 				<input type="submit" value="receive" class="button button__accent"/>
@@ -185,5 +187,29 @@
 		</div>
 	</div>
 <script src='js/app.min.js'></script>
+<script>
+	var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+loop: true
+});
+
+typewriter.typeString('Sparkling')
+.pauseFor(2500)
+.deleteAll()
+.typeString('Creative')
+.pauseFor(2500)
+.deleteAll()
+.typeString('Charming')
+.pauseFor(2500)
+.deleteAll()
+.typeString('Interesting')
+.pauseFor(2500)
+.deleteAll()
+.typeString('Emerging')
+.pauseFor(2500)
+.deleteAll()
+.start();
+	</script>
 </body>
 </html>
